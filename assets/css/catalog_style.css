@@ -1,0 +1,109 @@
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #A9A9A9;
+}
+
+/* Стили для header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Стили для footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Стили для header */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Используем margin-left вместо margin-right для отступов между элементами */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* =============================== */
+/* Стили для catalog.php */
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #A9A9A9;
+    padding: 20px; /* добавим отступы для лучшего визуального восприятия */
+    border-radius: 8px; /* скруглим углы контейнера */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* добавим тень */
+}
+
+
+.product {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    background-color: #858585;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product:hover {
+    /* Дополнительные стили при наведении (например, изменение цвета фона) */
+    background-color: #f0f0f0;
+}
